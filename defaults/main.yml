@@ -9,6 +9,8 @@ mdadm_arrays:
     devices:
       - '/dev/sdb'
       - '/dev/sdc'
+    # Define the --auto Option: yes,md,mdp,part,p, 'yes' is default if omitted
+    auto: 'yes'
     # Define filesystem to partition array with
     filesystem: 'ext4'
     # Define the array raid level
